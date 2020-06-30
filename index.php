@@ -44,31 +44,6 @@ switch ($request_API_method) {
   include_once 'API/user-api/user.delete.php';
   break;
 
-  // API для подтверждения пользователя
-  case 'user.confirm':
-  include_once 'API/user-api/user.confirm.php';
-  break;
-
-  /*
-  * Процедура восстановления пароля
-  */
-  // API для отправления запроса на восстановления пароля пользователя
-  case 'user.q_restore_pass':
-  include_once 'API/user-api/pass_restore/user.q_restore_pass.php';
-  break;
-
-  // API для подтверждение восстановления смены пароля
-  case 'user.conf_restore_pass':
-  include_once 'API/user-api/pass_restore/user.conf_restore_pass.php';
-  break;
-
-  // API для смены пароля
-  case 'user.restore_change_pass':
-  include_once 'API/user-api/pass_restore/user.restore_change_pass.php';
-  break;
-  /*
-  * Процедура восстановления пароля окончена
-  */
   // API для добавления аватара
   case 'avatar.add':
   include_once 'API/user-api/avatar-api/avatar.add.php';
